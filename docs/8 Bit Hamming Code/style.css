@@ -1,0 +1,207 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    background: url(8bitBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: fixed;
+    backdrop-filter: blur(1.5px);
+    bottom: 0px;
+    top: 0px;
+}
+
+.container1
+{
+    display: flex;
+    width: 1920px;
+    height: 40px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom:50px;
+}
+
+.container2
+{
+    display: flex;
+    width: 1920px;
+    height: 40px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom:50px;
+}
+
+.container3
+{
+    display: flex;
+    width: 480px;
+    height: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 17.5%;
+}
+
+.container4
+{
+    display: flex;
+    width: 480px;
+    height: 40px;
+    text-align: center;
+    margin: auto;
+}
+
+.pos
+{
+    margin: auto;
+    margin-left: 20px;
+    width: 120px;
+    height: 10px;
+    color: white;
+    font-family: "Josefin Sans",sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.parity,.box
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 90px;
+    height: 90px;
+    border-radius: 18%;
+    color: black;
+    background: rgb(250, 250, 250);
+    font-family: "Lato",sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.check
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 90px;
+    height: 90px;
+    border-radius: 18%;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    font-family: "Lato",sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.checkText
+{
+    margin: auto;
+    font-family: "Josefin Sans",sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    color: white;
+}
+
+#data
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+#text
+{
+    margin-top: 25px;
+    width: 500px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: "Josefin Sans";
+    text-align: center;
+}
+
+.btn 
+{
+    --color: #ffffff;
+    --color2: rgb(10, 25, 30);
+    padding: 0.8em 1.75em;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 200;
+    font-size: 20px;
+    font-family: "Josefin Sans";
+    color: var(--color);
+}
+
+.btn::after, .btn::before 
+{
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+}
+
+.btn::before 
+{
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::before 
+{
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::after 
+{
+    transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn:hover 
+{
+    color: var(--color2);
+}
+
+.btn:active 
+{
+    filter: brightness(.7);
+    transform: scale(.98);
+}
+
+.btn
+{
+    display: flex inline;
+    justify-content: center;
+    width: 470px;
+    margin-top: 50px;
+    margin-left: 2px;
+}
+
+#mainPage
+{
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
